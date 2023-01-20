@@ -1,0 +1,33 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:zsoa="http://zsoa.zurichna.com/enterpriseservices/ZSOA_WS" xmlns:zsoa1="http://zsoa.zurichna.com/enterpriseservices/ZSOA" xmlns:zsoa2="http://zsoa.zurichna.com/enterpriseservices/ZSOA_Common" xmlns:zsoa3="http://zsoa.zurichna.com/enterpriseservices/ZSOA_Party">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <zsoa:StandardiseAddressRequest>
+         <requestHeader>
+            <zsoa1:id>?</zsoa1:id>
+            <zsoa1:customerId>?</zsoa1:customerId>
+            <zsoa1:loopback>?</zsoa1:loopback>
+         </requestHeader>
+         <!--Zero or more repetitions:-->
+         <freeFormAddress>
+            <!--Optional:-->
+            <zsoa2:basicDataIncomplete>?</zsoa2:basicDataIncomplete>
+            <!--Optional:-->
+            <zsoa2:systemCreationDateTime>?</zsoa2:systemCreationDateTime>
+            <!--Optional:-->
+            <zsoa2:systemUpdateDateTime>?</zsoa2:systemUpdateDateTime>
+            <!--Optional:-->
+            <zsoa3:endDate>?</zsoa3:endDate>
+            <!--Optional:-->
+            <zsoa3:externalReference>?</zsoa3:externalReference>
+            <!--Optional:-->
+            <zsoa3:startDate>?</zsoa3:startDate>
+            <!--Optional:-->
+            <zsoa3:addressLines>?</zsoa3:addressLines>
+            <!--Optional:-->
+            <zsoa3:contactPointAsString>?</zsoa3:contactPointAsString>
+            <!--Optional:-->
+            <zsoa3:typeName>?</zsoa3:typeName>
+         </freeFormAddress>
+      </zsoa:StandardiseAddressRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
